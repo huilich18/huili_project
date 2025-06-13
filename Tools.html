@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="mystyle.css"> 
+</head>
+<script src="myscript.js"></script>
+<body id="bgbody">
+<div class="w3-sidebar w3-bar-block" style="width:20%; color:#c54b8c">
+  <h1 class="w3-bar-item">Menu</h1>
+  <a href="PersonalInfo.html" class="w3-bar-item w3-button">Home</a>
+  <a href="#tools" class="w3-bar-item w3-button">Tools</a>
+  <a href="#simplecal" class="w3-bar-item w3-button">Simple Calculator</a>
+  <a href="#BMI" class="w3-bar-item w3-button">BMI Checker</a>
+  <a href="#incometax" class="w3-bar-item w3-button">Income Tax Calculator</a>
+  <a href="#Unit" class="w3-bar-item w3-button">Unit Converter</a>
+</div>
+
+<div style="margin-left:20%">
+<div id="tools" class="w3-container">
+<h1 style="text-align:center"> Tools </h1>
+<hr></hr>
+<img src="tools.png" width="100%"><br>
+<hr></hr>
+</div>
+
+<form>
+<div id="simplecal" class="w3-container">
+<h1> Simple Calculator</h1>
+<fieldset id="bg" style="width: 400px";>
+<p>
+<label>First Number: </label><br>
+<input type="text" id="no1"></input></p>
+<p>
+<label>Second Number:  </label><br>
+<input type="text" id="no2"></input></p>
+<p>
+<label>Result:  </label><br>
+<input type="text" id="result" value="0"></input></p>
+<p>
+<input type="button" onclick = "add()" value="Add (+)"></input>
+<input type="button" onclick = "sub()" value="Substract (-)"></input>
+<input type="button" onclick = "mul()" value="Multiply (*)"></input>
+<input type="button" onclick = "div()" value="Divide (/)"></input>
+</p>
+<p><input type="reset" value="Clear"></input></p>
+</fieldset><br>
+</div>
+</form>
+<hr></hr>
+
+<form>
+<div id="BMI" class="w3-container">
+<h1> BMI Checker</h1>
+<fieldset style="width: 400px";>
+<p>
+<label>Height (meters):</label>
+<input type="text" id="height"></p>
+<p>
+<label>Weight (kg):</label>
+<input type="text" id="weight"></p>
+<p>
+<label>BMI Category: </label>
+<input type="textbox" id="resultBMI"></p>
+<p><input type="button" onclick="calculateBMI()" value="Check BMI"></input></p>
+<p><input type="reset" value="Clear"></input></p>
+</fieldset><br>
+</div>
+</form>
+<hr></hr>
+
+<form>
+<div id="incometax" class="w3-container">
+<h1> Income Tax Calculator</h1>
+<fieldset style="width: 400px";>
+<label>Enter your Annual Income: </label>
+<p>
+<label>Annual Income (RM):</label>
+<input type="text" id="income"></input></p>
+<p>
+<label>Income Tax (RM): </label>
+<input type="text" id="tax"></input></p>
+<p><input type="button" onclick = "incomeCalculator()" id="check" value="Check"></input></p>
+<p><input type="reset" value="Clear"></input></p>
+</div>
+</form>
+<hr></hr>
+
+<form>
+<div id="Unit" class="w3-container">
+<h1>Unit Converter</h1>
+<fieldset style="width: 400px;">
+<p>
+<label>Enter Number:</label>
+<input type="text" id="num"></p>
+<p id="resultUnit"></p>
+<p>
+<input type="button" onclick="cmtom()" value="cm to m">
+<input type="button" onclick="mtocm()" value="m to cm"></input>
+<input type="button" onclick="mtokm()" value="m to km"></input>
+<input type="button" onclick="kmtom()" value="km to m"></input>
+</p>
+<p><input type="reset" value="Clear"></input></p>
+</fieldset>
+</div>
+</form><br>
+
+</body>
+</html>
